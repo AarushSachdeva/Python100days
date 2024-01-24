@@ -4,7 +4,7 @@ BJP=0
 Congress=0 
 Samajwadi=0 
 print("Please enter the password admin")
-password=(input("")
+password=input("")
 print("How many voters are there?")
 number=int(input(""))
 for i in range(1,number+1,1):
