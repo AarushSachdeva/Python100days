@@ -51,3 +51,5 @@ print(str1)
 str0="!!Aarush Lets code"
 print(str0.split(" "))#specified instance is " ".
 #Capitalize function-It is used to return a string which has converted the first character of the previous string to uppercase and the rest characters into lowercase.
+stg="hello welcoMe to Geeks for Geeks"
+print(stg.capitalize())
