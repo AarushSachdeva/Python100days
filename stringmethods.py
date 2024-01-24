@@ -7,6 +7,10 @@ temp="Hi,My name is Aarush"
 #Taking input of a string from user(By default the input is in string)
 name=input("Enter your name\n")
 print(name)
+#We can create multi-line strings using """ or '''.
+str="""Hi I am Aarush,
+this is my github profile which you are viewing
+Here you will learn more about strings"""
 #Length of a string(We can find the length of a string using len() function)
 len1=len(name)
 print("The length of my name is:",len1)
