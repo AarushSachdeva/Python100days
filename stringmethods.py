@@ -25,3 +25,29 @@ This is an operation or method for cutting a string from the main string.There a
 """
 print(name[0:3])
 print(name[-3:-1])
+#Strings are immutable-we cannot update,delete the characters from a string.A string cannot be updated/deleted but can be assigned an entirely new value to the same name.
+#We can change strings but we cannot change them in-place.
+#Functions that we can apply using/on strings
+#stringname.upper()-Converts all the characters present in the string to uppercase.
+a="Harry"
+a=a.upper()#New value assigned
+print(a)
+#stringname.lower()-converts all the characters present in the string to lowercase.
+a=a.lower()
+print(a)
+#Strip function-It is used to remove whitespaces before and after the string
+a=" Silver  Spoon.    "
+a=a.strip()
+print(a)
+#Rstrip function-It is used to remove all occurences of any trailing character
+str2="Silver!!!! Spo!!!on !!!!!")
+str2=str2.rstrip("!")
+print(str2)
+#replace function-This function is used to replace all the occurences of the string present to another string.
+str1="Silver Spoon"
+str1=str1.replace("Sp","M")
+print(str1)
+#Spilt function-It is used to convert the string into elements of list by splitting them at specified instances.
+str0="!!Aarush Lets code"
+print(str0.split(" "))#specified instance is " ".
+#Capitalize function-It is used to return a string which has converted the first character of the previous string to uppercase and the rest characters into lowercase.
