@@ -53,3 +53,19 @@ print(str0.split(" "))#specified instance is " ".
 #Capitalize function-It is used to return a string which has converted the first character of the previous string to uppercase and the rest characters into lowercase.
 stg="hello welcoMe to Geeks for Geeks"
 print(stg.capitalize())
+#count function-it is used to tell or return the number of occurences of a value in a string
+value=stg.count("Geeks")
+print(value)
+#find function-It is used to find the first occurence of a value in a string and return its index.
+index=stg.find("o")
+print(index)
+#isalnum()-This is a function used in Python to return True if the string is made up of only a-z,A-z or 0 to 9.If it consits of any other character then it return false
+flag=stg.isalnum()
+print(flag)
+#endswith function-It is used to find whether a string ends with a particular character or a set of characters or not.
+print(stg.endswith("Aarush"))
+print(stg.endswith("Geeks"))
+#this function can also be used to check for a value in-between by providing starting and ending indices.
+print(stg.endswith("to",4,10))
+#swapcase-This is a function used to convert the uppercase characters present in the string to lowercase and vice-versa.
+print(stg.swapcase())
