@@ -25,7 +25,7 @@ This is an operation or method for cutting a string from the main string.There a
 """
 print(name[0:3])
 print(name[-3:-1])
-#Strings are immutable-we cannot update,delete the characters from a string.A string cannot be updated/deleted but can be assigned an entirely new value to the same name.
+#Strings are immutable-we cannot update,delete the characters from a string.A string cannot be updated/deleted but can be assigned an entirely new value to #the same name.
 #We can change strings but we cannot change them in-place.
 #Functions that we can apply using/on strings
 #stringname.upper()-Converts all the characters present in the string to uppercase.
@@ -40,7 +40,7 @@ a=" Silver  Spoon.    "
 a=a.strip()
 print(a)
 #Rstrip function-It is used to remove all occurences of any trailing character
-str2="Silver!!!! Spo!!!on !!!!!")
+str2="Silver!!!! Spo!!!on !!!!!"
 str2=str2.rstrip("!")
 print(str2)
 #replace function-This function is used to replace all the occurences of the string present to another string.
@@ -50,7 +50,7 @@ print(str1)
 #Spilt function-It is used to convert the string into elements of list by splitting them at specified instances.
 str0="!!Aarush Lets code"
 print(str0.split(" "))#specified instance is " ".
-#Capitalize function-It is used to return a string which has converted the first character of the previous string to uppercase and the rest characters into lowercase.
+#Capitalize function-It is used to return a string which has converted the first character of the previous string to uppercase and the rest characters into #lowercase.
 stg="hello welcoMe to Geeks for Geeks"
 print(stg.capitalize())
 #count function-it is used to tell or return the number of occurences of a value in a string
@@ -59,7 +59,7 @@ print(value)
 #find function-It is used to find the first occurence of a value in a string and return its index.
 index=stg.find("o")
 print(index)
-#isalnum()-This is a function used in Python to return True if the string is made up of only a-z,A-z or 0 to 9.If it consits of any other character then it return false
+#isalnum()-This is a function used in Python to return True if the string is made up of only a-z,A-z or 0 to 9.If it consits of any other character then it #return false
 flag=stg.isalnum()
 print(flag)
 #endswith function-It is used to find whether a string ends with a particular character or a set of characters or not.
