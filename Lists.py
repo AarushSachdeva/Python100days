@@ -36,4 +36,8 @@ else:
   print("Absent")
 """Range of list"""
 #We can print a range of items of list by specifying where you want to start,where you want to end and if you want to skip elements in between.
-
+animals=["donkey","monkey","dog","cat","lion","tiger","fox","deer"]
+print(animals[3:6])
+print(animals[-5:-2])
+#Here we have an additional concept of jump index.
+print(animals[1:7:2])
