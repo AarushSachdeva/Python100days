@@ -69,3 +69,8 @@ print(stg.endswith("Geeks"))
 print(stg.endswith("to",4,10))
 #swapcase-This is a function used to convert the uppercase characters present in the string to lowercase and vice-versa.
 print(stg.swapcase())
+#To check whether element in a string
+if "Aa" in "Aarush":
+  print("Yes")
+else:
+  print("No")
