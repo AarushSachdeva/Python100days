@@ -1,0 +1,25 @@
+Using Python,we can import codes,functions,classes and other utilities from different modules as well as we can import the modules too.But while importing them there is one thing that we need 
+to make sure of and that is we have to see or check that the module we are executing can have some code written in it which gets executed as soon as we import the file even if we dont use anything
+or write any code with the help of the file just by importing it there might be a code in that module that will get automatically executed just because we have imported that file.This is a major issue
+as in Python there are modules which contain powerful functions like there is a function in os module which is used to delete the files from your computer think the impact it can create.
+To prevent us from such scenarios we use the help of the idiom if __name__=="__main__" this is a powerful tool used for preventing the code from getting executed written in the module.
+__name__ is an inbuilt variable which automatically gets or sets its value to the string __main__ if the script is directly run.if the script is being imported as a module in another script,
+the __name__ will get set to the name of the module.
+If you want to execute this program or want to see the functioning of this program,then make two files in the same folder
+1.main.py(There are just random names i am giving to the files)
+2.temp.py  
+now in main write
+import temp                                                                                                                   
+temp.welcome()
+now in temp write                                                                                                                  
+def welcome():
+  print("Welcome")    
+welcome()  
+This will give two times output because we are running from main and the function called in from temp is also getting executed to prevent this
+in temp write
+def welcome():
+  print("Welcome")
+if __name__=="__main__":
+  welcome()
+
+ Now i will get only once output not twice as the code is only getting executed from main call                                                                                                                  
