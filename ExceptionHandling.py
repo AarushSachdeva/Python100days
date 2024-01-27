@@ -54,7 +54,7 @@ def fun1():
 x=fun1() 
 print(x)
 #In the above scenario,we see that if we write the finally block of code without using finally then it will not get executed as the function has return written in it but with the help of finally keyword we make the program execute finally block of code even when the function has returned.
-we learn about the raising custom errors using raise keyword. Sometimes, we want to impose hard and fast regulations so, we can use customer errors if something violates those regulations so, that it does not create any problem later in the program execution and that error can be handled at that point of time only. In the previous videos, we learnt about how to handle errors using exception handling with try, except and finally blocks. We can also make our custom error classes using any base case error with our defined set of rules to raise that error whenever it violates those rules.
+# we learn about the raising custom errors using raise keyword. Sometimes, we want to impose hard and fast regulations so, we can use customer errors if something violates those regulations so, that it does not create any problem later in the program execution and that error can be handled at that point of time only. In the previous videos, we learnt about how to handle errors using exception handling with try, except and finally blocks. We can also make our custom error classes using any base case error with our defined set of rules to raise that error whenever it violates those rules.
 a=int(input("Enter a value between 5 and 9"))
 if(a<5 or a>9):
   raise ValueError
