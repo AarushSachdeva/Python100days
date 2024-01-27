@@ -20,4 +20,38 @@ except ValueError:
   print("ValueError occured")
 except IndexError:
   print("Index error occured")
-  
+#Now lets talk about finally keyword
+#Finally is a keyword.The block of code written under this keyword gets executed irrespective of whether error has occured or not.
+#Method-1
+try:
+  b=0
+  c=a//b
+  print("The division of",a,"by",b,"is",c)
+except Exception as e:
+  print("Error occured which is",e)
+print("Finally we have successfully executed the program and handled the error")#Now this line occurs or executes everytime irrespective of whether or not error has occured or not.
+#Method-2
+try:
+  b=0
+  c=a//b
+  print("The division of",a,"by",b,"is",c)
+except Exception as e:
+  print("Error occured which is",e)
+finally:
+print("Finally we have successfully executed the program and handled the error")#Now this line occurs or executes everytime irrespective of whether or not error has occured or not.
+#The difference between method-1 and method-2 is that in method-2 if we wrap the whole thing in a function then also it will get executed.
+def fun1():
+  try:
+    b=0
+    c=a//b
+    print("The division of",a,"by",b,"is",c)
+    return 1
+  except Exception as e:
+    print("Error occured which is",e)
+    return 0
+  finally:
+    print("Finally we have successfully executed the program and handled the error")#Now this line occurs or executes everytime irrespective of whether or not error has occured or not.
+x=fun1() 
+print(x)
+#In the above scenario,we see that if we write the finally block of code without using finally then it will not get executed as the function has return written in it but with the help of finally keyword we make the program execute finally block of code even when the function has returned.
+
